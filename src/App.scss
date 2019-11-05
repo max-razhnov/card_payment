@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.card {
+  &__form {
+    margin: auto;
+    max-width: 570px;
+    width: 100%;
+    min-width: calc(320px - 10px * 2);
+    background: #fdfdff;
+    border-radius: 5px;
+    box-shadow: 0 30px 60px 0 rgba(191, 208, 224, 0.4);
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 12px;
+  }
+  &__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+    }
+  }
+
+  &__selection {
+    position: relative;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.arrow {
+  font-size: 1em;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  z-index: 20;
+}
+.wrapper {
+  position: relative;
+  padding: 100px 20px 0 20px;
+}
+
+.button {
+  padding: 15px 0;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
+  &:hover {
+    cursor: pointer;
+  }
+  &__submit {
+    margin: 20px 0;
+    background: #2564ce;
+    color: #ffffff;
+  }
+}
+
+.field {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 7px 10px;
+  border: 1px solid rgba(75, 82, 103, 0.3);
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  &:hover {
+    transition: 0.8s ease;
+    border-color: #2564ce;
+  }
+  &:focus {
+    box-shadow: 0 10px 10px 0 rgba(191, 208, 224, 0.4);
+  }
+}
+
+.label__wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+  & > label {
+    width: 25%;
+  }
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
+}
